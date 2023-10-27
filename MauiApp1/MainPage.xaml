@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <VerticalStackLayout Spacing="5" >
+            <HorizontalStackLayout Spacing="10">
+                <Label
+                Text="Server Url"
+                FontSize="18"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"/>
+
+                <Entry
+                x:Name="serverUrl"
+                WidthRequest="300"
+                MaxLength="150"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="5">
+                <Label
+                Text="UserName"
+                FontSize="18"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"/>
+
+                <Entry
+                x:Name="userName"
+                WidthRequest="300"
+                MaxLength="100"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="12">
+                <Label
+                Text="Password"
+                FontSize="18"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"/>
+
+                <Entry
+                x:Name="passWord"
+                WidthRequest="300"
+                MaxLength="100" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="5" Margin="0,10,0,10">
+            <Button
+                x:Name="SocketClick"
+                Text="SocketHandler"
+                Clicked="SocketClickListener" />
+            
+            <Button
+                x:Name="HttpClick"
+                Text="HttpHandler"
+                Clicked="HttpClickListener" />
+        </HorizontalStackLayout>
+
+        <Label
+            MaxLines="5"
+            x:Name="resultText"
+            Text="Result"
+            FontSize="15"
+            HorizontalOptions="Start" />
+    </StackLayout>
+    
+</ContentPage>
