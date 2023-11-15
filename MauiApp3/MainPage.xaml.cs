@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
     {
         string username = userName.Text;
         string password = passWord.Text;
-        string server_url = "https://aws.ex2016.smartrooms.ninja/ews/exchange.asmx";
+        string server_url = serverUrl.Text;
 
         if (password != null || username != null || server_url != null)
         {
@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
     {
         string username = userName.Text;
         string password = passWord.Text;
-        string server_url = "https://aws.ex2016.smartrooms.ninja/ews/exchange.asmx";
+        string server_url = serverUrl.Text;
 
         if (password != null || username != null || server_url != null)
         {
